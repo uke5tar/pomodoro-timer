@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+
+    <title>Pomodoro Timer</title>
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="pomodoro.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+</head>
+<body>
+    <div class="body-wrapper grid-container">
+        <header><h1>Pomodoro Timer</h1></header>
+        <main>
+            <div class="pomodoro-wrapper grid-container">
+                <div class="pomodoro-control-wrapper grid-container">
+                    <div class="pomodoro-control" id="break">
+                        <div class="control-title">Breaks</div>
+                        <div class="control-units">
+                            <button class="decrease">-</button>
+                            <div id="break-counter"></div>
+                            <button class="add">+</button>
+                        </div>
+                    </div>
+                    <div class="pomodoro-control" id="rounds">
+                        <div class="control-title">Rounds</div>
+                        <div class="control-units">
+                            <button class="decrease">-</button>
+                            <div id="rounds-counter"></div>
+                            <button class="add">+</button>
+                        </div>
+                    </div>
+                    <div class="pomodoro-control" id="session">
+                        <div class="control-title">Sessions</div>
+                        <div class="control-units">
+                            <button class="decrease">-</button>
+                            <div id="session-counter"></div>
+                            <button class="add">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="pomodoro-buttons">
+                    <button id="start">Start</button>
+                    <button id="stopresume">Stop</button>
+                    <button id="reset">Reset</button>
+                </div>
+                <div class="pomodoro-clock-wrapper">
+                    <div class="pomodoro-clock grid-container">
+                        <div class="pomodoro-title session">Session</div>
+                        <div class="pomodoro-timer session" id="session-display"></div>
+                        <div class="pomodoro-title break">Break</div>
+                        <div class="pomodoro-timer break" id="break-display"></div>
+                        <div class="pomodoro-title rounds"><div id="rounds-name">Rounds: </div><div id="rounds-display"></div></div>
+                    </div>
+                </div>
+                <audio style="display: none" id="sound" preload src="https://freesound.org/data/previews/77/77716_1179015-lq.mp3"></audio>
+            </div>
+        </main>
+    </div>
+
+    <!-- custom Javascript -->
+    <script src="pomodoro.js"></script>
+
+</body>
+</html>
